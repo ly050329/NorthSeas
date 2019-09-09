@@ -29,7 +29,7 @@ public class MainActivity extends BaseActivity {
 
     @Override
     public void initView(View view) {
-        ProgressUtil.showProgressDialog(this,"请稍后...");
+//        ProgressUtil.showProgressDialog(this,"请稍后...");
     }
 
     @Override
