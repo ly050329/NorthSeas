@@ -1,6 +1,7 @@
 package com.xh.sea.activity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -15,6 +16,7 @@ import com.xh.sea.view.SmoothCheckBox;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 public class LoginActivity extends BaseActivity {
 
@@ -63,5 +65,22 @@ public class LoginActivity extends BaseActivity {
     protected void setStatusBar() {
 //        StatusBarUtil.setTranslucentForImageViewInFragment(this, null);
         StatusBarUtil.setTransparent(this);
+    }
+
+    @OnClick({R.id.btn_login, R.id.tv_login_register,R.id.tv_login_forget_password})
+    public void onViewClicked(View view) {
+        Intent intent = new Intent();
+        switch (view.getId()) {
+            case R.id.btn_login:
+                break;
+            case R.id.tv_login_register:
+                intent.setClass(this,RegisterActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.tv_login_forget_password:
+                intent.setClass(this,ForgetPasswordActivity.class);
+                startActivity(intent);
+                break;
+        }
     }
 }

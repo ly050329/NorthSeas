@@ -8,4 +8,5 @@
     <color name="login_blue">#2560CE</color>
     <color name="login_btn">#EE9E21</color>
     <color name="login_lly_bg">#EEEEEE</color>
+    <color name="top_main_bg">#11368F</color>
 </resources>

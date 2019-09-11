@@ -270,7 +270,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     }
 
     protected void setStatusBar() {
-        StatusBarUtil.setColor(this, getResources().getColor(R.color.colorPrimaryDark));
+        StatusBarUtil.setColor(this, getResources().getColor(R.color.top_main_bg));
     }
 
     public void setOrientation(){
